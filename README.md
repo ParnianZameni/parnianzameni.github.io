@@ -1,1 +1,0 @@
-# parnianzameni.github.io
