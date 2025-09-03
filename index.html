@@ -1,11 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Parnian Zameni</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parnian Zameni — Computer Science</title>
+  <meta name="description" content="Parnian Zameni — Computer Science PhD student. Research in Computer Vision.">
+
+  <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-  <h1>Hello, my name is Parnian Zameni😊 </h1>
-  
+  <div class="wrap">
+    <header class="site-header">
+      <img class="avatar" src="headshot.jpg" alt="Portrait of Parnian Zameni">
+      <div>
+        <h1 class="site-title">Parnian Zameni</h1>
+        <p class="site-tagline">PhD Student, Computer Science · Northeastern University</p>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#news">News</a>
+          <a href="#publications">Publications</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content">
+      <section id="about" class="grid-2">
+        <div>
+          <p>
+            I am a PhD student advised by Professor Robin Walters.\\
+            My research interests include video understanding.
+          </p>
+          
+        </div>
+        
+      </section>
+
+      <section id="news">
+        <h2>News</h2>
+        <ul class="news">
+          <li><time>June 2025</time> Paper accepted to ICCV 2025.</li>
+            <li><time>May 2025</time> Started internship at Apple .</li>
+        </ul>
+      </section>
+
+      <section id="publications">
+        <h2>Publications <span class="muted"><!--(see also <a href="#">Google Scholar</a>, <a href="#">DBLP</a>)--></span></h2>
+        <ol class="pubs" reversed>
+          <li class="pub">
+            <div class="pub-title">MOSCATO: Predicting Multiple Object State Change Through Actions</div>
+            <div class="pub-authors">Parnian Zameni, Yuhan Shen, Ehsan Elhamifar</div>
+            <div class="pub-venue">ICCV, 2025</div>
+            <!--<div class="pub-links"><a href="#">paper</a> · <a href="#">code</a> · <a href="#">slides</a></div>-->
+          </li>
+          
+        </ol>
+      </section>
+      
+
+      <section id="contact" class="grid-3">
+        <div>
+          <h2>Contact</h2>
+          <p><strong>Email:</strong> <a href="mailto:you@example.edu">zameni.p@northeastern.edu</a></p>
+        </div>
+        <!--
+        <div>
+          <h2>Profiles</h2>
+          <ul class="tight">
+            <li><a href="#">Google Scholar</a></li>
+            <li><a href="#">ORCID</a></li>
+            <li><a href="#">DBLP</a></li>
+            <li><a href="#">GitHub</a></li>
+          </ul>
+        </div>
+        -->
+        <div>
+          <h2>Keywords</h2>
+          <p class="muted">Computer Vision . Machine Learning . Artificial Intelligence</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      © <span id="year"></span> Parnian Zameni · <a href="#content">Back to top ↑</a>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
